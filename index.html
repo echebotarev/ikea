@@ -1,0 +1,844 @@
+<!DOCTYPE>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<title>ИКЕЯ в Актау</title>
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/jquery.countdown.css" />
+	<link class="link" rel="stylesheet" type="text/css" media="screen and (max-width:736px)" href="css/max-736px.css" />
+	<link type="image/x-icon" rel="shortcut icon" href="image/favicon.ico">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/label_better-master/jquery.label_better.min.js"></script>
+	<script src="js/jquery.liActualSize.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#button_timer,#stairs_footer_content p a").click(function(){
+				$("#comment").focus();
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			var body = $("body"),
+				box = "<div class='box'></div>",
+				menu_ball = $("#menu_ball"),
+				width = innerWidth;
+			$("#prymer_1,#prymer_2").click(function(){
+				var img = "<img class='img_prymer' src='image/step_one_two.jpg' />";
+				body.append(box);
+				body.append(img);
+				menu_ball.hide();
+				$('.box').click(function(){
+					$(this).remove();
+					$('.img_prymer').remove();
+					if(width > 736){
+						menu_ball.show();
+					}
+				});
+			});
+			$("#prymer_3").click(function(){
+				var img = "<img class='img_prymer' src='image/step_three.jpg' />";
+				body.append(box);
+				body.append(img);
+				menu_ball.hide();
+				$('.box').click(function(){
+					$(this).remove();
+					$('.img_prymer').remove();
+					if(width > 736){
+						menu_ball.show();
+					}
+				});
+			});
+			$("#prymer_4").click(function(){
+				var img = "<img class='img_prymer4' src='image/step_four.jpg' />";
+				body.append(box);
+				body.append(img);
+				menu_ball.hide();
+				$('.box').click(function(){
+					$(this).remove();
+					$('.img_prymer4').remove();
+					if(width > 736){
+						menu_ball.show();
+					}
+				});
+			});
+
+			$("#button_video").click(function(){
+				body.append(box);
+				$("#ifr").show();
+				menu_ball.hide();
+				$(".box").click(function(){
+					$(this).remove();
+					$("#ifr").hide();
+					if(width > 736){
+						menu_ball.show();
+					}
+				});
+			});
+		});
+	</script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-57263747-2', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<!--<script>
+    	$(document).ready(function(){
+    		var width = innerWidth,
+    			menu = $("#nav ul"),
+    			ball = $("#menu_ball");
+    		$('html, body').scroll(function(){
+    			if(ball.hasClass('menu_rotate_left')){
+	    			ball.removeClass().addClass('menu_rotate_right').addClass('object');
+	    			menu.removeClass().addClass("animated").addClass("marginLeft750");
+	    		}
+    		});
+
+    		ball.click(function(){
+    			if(menu.hasClass("marginLeft0")){
+    				$(this).removeClass().addClass('menu_rotate_right').addClass('object');
+    				menu.removeClass().addClass("animated").addClass("marginLeft750");
+    			}
+    			else{
+    				$(this).removeClass().addClass('menu_rotate_left').addClass('object');
+    				menu.removeClass().addClass("animated").addClass("marginLeft0");
+    			}
+    		});
+    	});
+    </script>-->
+
+
+	<!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div id="main">
+    <div class="header_substrate"></div>
+	<div id="header">
+		<!--<div id="menu_ball" class="object menu_rotate_left">
+			<div class="line_rotate line_rot">
+			</div>
+			<div class="line_rotate">
+			</div>
+			<div class="line_rotate">
+			</div>
+		</div>-->
+		<div id="nav">
+			<div class="overflow">
+				<ul>
+					<li>
+						<a href="#why_ikea">
+							почему ikea
+						</a>
+					</li>
+					<li>
+						<a class="zakaz" href="#stairs">
+							как это работает
+						</a>
+					</li>
+					<li>
+						<a class="buy" href="#stairs">
+							сделать заказ
+						</a>
+					</li>
+					<li>
+						<a class="logistic" href="#stairs">
+							стоимость и сроки
+						</a>
+					</li>
+					<li>
+						<a href="#garantiya">
+							гарантии
+						</a>
+					</li>
+					<li>
+						<a target="blanck" href="http://www.ikea.com/ru/ru/catalog/allproducts/">
+							<span>
+								Каталог товаров ИКЕА
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="phone">
+                <img src="image/logo_phone.png">+7 (701) 737-57-36<br />
+                <img alt="WhatsApp/Viber" title="WhatsApp/Viber" src="image/logo_viber_whatsapp.png">+7 (911) 172-13-08
+			</div>
+		</div>
+	</div>
+	<div id="ikea">
+		<div id="logo">
+			<img src="image/logo.png" />
+		</div>
+
+		<div id="ikea_text_1">
+
+                Доставляем мебель <span>IKEA</span> в Актау
+			<ul class='description_ikea_text'>
+            	<li>– Чтобы узнать стоимость, прибавьте 30% к товару - это ваша цена</li>
+				<li>– Предоплата 50%</li>
+				<li>– Отправка 2 раза в месяц</li>
+			</ul>
+
+		</div>
+
+		<div id="timer_bg">
+			<div id="timer">
+				<div id="timer_text">
+					для заказа времени осталось:
+				</div>
+				<div class="date">
+					<span class="day"></span><br />
+                    <span class="month"></span>
+				</div>
+				<div id="date_text">
+					Следующая машина отправится
+				</div>
+				<div id="countdown"></div>
+				<div id="button_timer">выбрать и заказать</div>
+			</div>
+		</div>
+	</div>
+	<!--<div id="three_history">
+		<div id="bg">
+			<div id="history_nav">
+				<h1><span>Основатель <span style="font-weight:bold;">IKEA</span></span></h1>
+				<ul>
+					<li id="osnov_button" class="passive">ОСНОВАТЕЛЬ</li>
+					<li id="hist_button" class="active">ИСТОРИЯ IKEA</li>
+					<li id="meb_button" class="active">МЕБЕЛЬ IKEA</li>
+				</ul>
+			</div>
+			<div id="history_one">
+				<img src="image/kamrad.png" />
+				<div id="history_one_text">
+					<h1>Ингвар Кампрад</h1>
+					<p>Предлагая широкий ассортимент
+					удобных и функциональных товаров
+					для обустройства дома по таким
+					низким ценам, чтобы как можно больше
+					людей имели возможность их купить</p>
+				</div>
+			</div>
+			<div style="display:none;" id="history_two">
+				<div id="scroller">
+					<div id="menu_orange"></div>
+					<div id="menu_blue"></div>
+					<div id="button_scroll"></div>
+					<div id="scroll">
+					</div>
+					<div id="year">
+						<ul>
+							<li id="click_1"></li>
+							<li id="click_2"></li>
+							<li id="click_3"></li>
+							<li id="click_4"></li>
+							<li id="click_5"></li>
+							<li id="click_6"></li>
+						</ul>
+					</div>
+				</div>
+				<div id="list">
+				<div id="history_two_text">
+					<img src="image/history_main.jpg">
+					<h1>Хронология ИКЕА: как все начиналось</h1>
+					<p>За шесть десятилетий ИКЕА превратилась из скромной частной компании на юге Швеции в крупнейшее предприятие розничной торговли, имеющее представительства в 40 странах мира. </p>
+					<p>На самом деле история ИКЕА началась еще в 1926 году, когда в местечке Смоланд на юге Швеции родился основатель компании Ингвар Кампрад. Он рос на ферме Ельмтарюд рядом с маленькой деревушкой Агуннарюд. Даже в совсем юном возрасте Ингвар точно знал, что хочет иметь свой бизнес.</p>
+					<div id="date_1">
+						<h1>1920-е</h1>
+						<p>
+						Когда Ингвару Кампраду исполнилось пять лет, он начал продавать спички своим ближайшим соседям, а к семи годам уже охватил торговлей более обширную территорию, развозя товар на велосипеде. Он выяснил, что в Стокгольме можно оптом покупать спички дешевле, а затем продавать их в розницу тоже по очень низкой цене, но все-таки получая при этом хорошую прибыль. От торговли спичками Ингвар Кампрад перешел к продаже семян цветов, поздравительных открыток, елочных украшений, а еще позднее – карандашей и шариковых ручек.</p>
+						<img src="image/history_1920.jpg">
+					</div>
+					<div id="date_2">
+						<h1>1940-50е</h1>
+						<p>
+						Зарождение мебельного магната. Проявив талант предпринимателя, Ингвар Кампрад превратил ИКЕА в мебельный магазин. В этот период установился дизайн мебели ИКЕА, сформировался принцип самостоятельной сборки, велись поиски способов рекламы компании. Каталог и выставка мебели превратились в основные инструменты, позволяющие донести информацию об ИКЕА до большинства людей.</p>
+						<img src="image/history_1940.jpg">
+					</div>
+					<div id="date_3">
+						<h1>1960-70е</h1>
+						<p>
+						Начало формирования концепции ИКЕА. Открылись новые магазины ИКЕА, появились товары, получившие затем название "Герои дня", например ПОЭНГ и БИЛЛИ. Сформировалась концепция, которую Ингвар Кампрад описал в книге "Заповеди торговца мебелью".</p>
+						<img src="image/history_1960.jpg">
+					</div>
+					<div id="date_4">
+						<h1>1980е</h1>
+						<p>
+						ИКЕА сделала серьезный рывок, осваивая новые рынки – в США, Италии, Франции, Великобритании. Появились новые товары, относящиеся к так называемой классике – КЛИППАН, ЛАКК, МОМЕНТ. ИКЕА начала обретать характерные черты, к которым мы привыкли сегодня.</p>
+						<img src="image/history_1980.jpg">
+					</div>
+					<div id="date_5">
+						<h1>1990е</h1>
+						<p>
+						ИКЕА продолжала расти. В ассортименте появились товары ИКЕА для детей, и в центре внимания оказались решения для обустройства дома, удовлетворяющие потребностям семей, где есть дети. Сформировалась Группа компаний ИКЕА, а ответственное отношение к природе и социальным проблемам стало необходимым условием для успешного ведения бизнеса.</p>
+						<img src="image/history_1990.jpg">
+					</div>
+					<div id="date_6">
+						<h1>2000-е</h1>
+						<p>
+						ИКЕА осваивает все новые рынки – в Японии и России. Проводятся исследования, позволяющие определить все необходимое для обустройства спальни и кухни и предложить комплексные гармоничные решения. В этот период вместе с другими компаниями успешно реализуются несколько проектов, направленных на решение социальных и экологических проблем.</p>
+						<img src="image/history_2000.jpg">
+					</div>
+				</div>
+				</div>
+			</div>
+			<div style="display:none;" id="history_three">
+				<div id="photo">
+					<div id="photo_1"></div>
+					<div id="photo_2" style="display:none;"></div>
+					<div id="photo_3" style="display:none;"></div>
+					<div id="photo_4" style="display:none;"></div>
+					<div id="photo_5" style="display:none;"></div>
+					<div id="photo_6" style="display:none;"></div>
+					<div id="photo_7" style="display:none;"></div>
+					<div id="photo_8" style="display:none;"></div>
+				</div>
+				<div id="mini_photo">
+					<div id="mini_1" class="mini_mebel">
+						<img src="image/mebel_1.jpg" />
+					</div>
+					<div id="mini_2" class="mini_mebel">
+						<img src="image/mebel_2.jpg" />
+					</div>
+					<div id="mini_3" class="mini_mebel">
+						<img src="image/mebel_3.jpg" />
+					</div>
+					<div id="mini_4" class="mini_mebel">
+						<img src="image/mebel_4.jpg" />
+					</div>
+					<div id="mini_5" class="mini_mebel">
+						<img src="image/mebel_5.jpg" />
+					</div>
+					<div id="mini_6" class="mini_mebel">
+						<img src="image/mebel_6.jpg" />
+					</div>
+					<div id="mini_7" class="mini_mebel">
+						<img src="image/mebel_7.jpg" />
+					</div>
+					<div id="mini_8" class="mini_mebel">
+						<img src="image/mebel_8.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+-->
+	<div id="ikea_today">
+		<a name="why_ikea"></a>
+		<div id="background">
+			<h1>IKEA <span>сегодня</span></h1>
+			<div id="three_columns">
+				<div class="column">
+					<img src="image/ikeatoday_1.png" />
+					<p>В Группу компаний IKEA входят <span>315 магазинов в 27 странах мира.</span></p>
+				</div>
+				<div class="column">
+					<img src="image/ikeatoday_2.png" />
+					<p>IKEA предлагает широкий ассортимент товаров для дома по таким <span>низким ценам</span>, чтобы как можно больше людей имели возможность их купить.</p>
+				</div>
+				<div class="column last">
+					<img src="image/ikeatoday_3.png" />
+					<p>Один из главных принципов IKEA — <span>товары для экологичного будущего</span>. Компания IKEA говорит «Да!» людям и планете.</p>
+				</div>
+			</div>
+			<div id="block_white">
+				<p>Работа нашей компании основана на наших ценностях и живом интересе к обустройству дома.
+				</p>
+				<p>Каждый товар, который мы создаем, призван сделать дом самым прекрасным местом на земле.</p>
+				<h6>IKEA</h6>
+			</div>
+		</div>
+	</div>
+
+	<div id="instruction_shadow">
+		<div id="instruction">
+			<div id="node_1" class="instruction_node">
+				<img src="image/instruction_blanck.png" />
+				<div class="instruction_text">	
+					<p>Выбираете товар на сайте IKEA</p>
+				</div>
+			</div>
+			<div id="node_2" class="instruction_node arrow">
+				<img src="image/instruction_hand.png" />
+				<div class="instruction_text">			
+					<p>Отправляете заказ нам и вносите предоплату 50%</p>
+				</div>
+			</div>
+			<div id="node_3" class="instruction_node">
+				<img src="image/instruction_man.png" />
+				<div class="instruction_text">	
+					<p>Через 2-3 недели с момента отправки машины, мы доставим ваш заказ</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="stairs">
+		<a name="stairs"></a>
+		<div id="zakaz">
+			<h1>Закажите прямо сейчас</h1>
+			<div id="button_video">
+				<img src="image/play-button2.png" />
+				посмотреть видеоинструкцию
+			</div>
+			<iframe id="ifr" width="640" height="360" src="https://www.youtube.com/embed/9hGDBMwL7i4?rel=0" frameborder="0" allowfullscreen></iframe>
+			<div class="stair">
+				<div class="button_stair">
+					1
+				</div>
+				<p>Перейти на сайт <a target='blanck' href="http://www.ikea.ru">IKEA</a> Выберите нужные товары и добавьте их в список покупок</p>
+				<span id="prymer_1">Посмотреть пример</span>
+			</div>
+			<img src="image/arrow.png" />
+			<div class="stair">
+				<div class="button_stair">
+					2
+				</div>
+				<p>После добавления всех товаров в список покупок, <span>перейдите в него по ссылке "список покупок"</span> в верхнем правом углу страницы товара.</p>
+				<span id="prymer_2">Посмотреть пример</span>
+			</div>
+			<img src="image/arrow.png" />
+			<div class="stair">
+				<div class="button_stair">
+					3
+				</div>
+				<p>На странице "список покупок" <span>проверьте правильность</span> списка нужных вам товаров. Затем нажмите на кнопку <span>"отправить по электронной почте"</span></p>
+				<span id="prymer_3">Посмотреть пример</span>
+			</div>
+			<img src="image/arrow.png" />
+			<div class="stair">
+				<div class="button_stair">
+					4
+				</div>
+				<p>Введите в открывшейся форме <span>актуальные данные</span> - Вашу электронную почту, сообщение с комментариями к заказу, код с картинки и наш <span>e-mail: info@aktau-ikea.kz</span>, затем нажмите на кнопку "отправить”.</p>
+				<span id="prymer_4">Посмотреть пример</span>
+			</div>
+		</div>
+
+		<div style="display:none;" id="buy">
+			<h1>Как оплатить заказ</h1>
+			<div id="steps">
+				<div class="buy_step">
+					<div class="buy_button">
+						50%
+					</div>
+					<p>Предоплата, которую вы вносите наличным или безналичным путем перед отправкой машины призаказе товаров IKEA у нас.</p>
+				</div>
+				<div class="buy_step middle_step">
+					<div class="buy_button">
+						+30%
+					</div>
+					<p>Такой процент прибавляется к сумме вашего заказа — это стоимость наших услуг по доставке вашего заказа к вам домой</p>
+				</div>
+				<div class="buy_step">
+					<div class="buy_button">
+						<p>2-3 недели</p>
+					</div>
+					<p>Через 2-3 недели с момента отправки машины, курьер доставит ваш заказ к вам домой или в офис, доставка курьеру не оплачивается</p>
+				</div>
+			</div>
+		</div>
+
+		<div style="display:none;" id="logistic">
+			<h1>Ваш товар приедет</h1>
+			<div class="date_two">
+				<span class="day_two"></span><br />
+                <span class="month monthArrival"></span>
+			</div>
+			<div id="count_down"></div>
+			<p>Закажите сегодня и получите заказ до 30 <span class="month"></span></p>
+		</div>
+
+		<div id="stairs_footer_bg">
+		</div>
+		<div id="wrap_stairs_footer_content">
+			<div id="stairs_footer_content">
+				<p>Вам некогда разбираться? Мы сделаем все за вас — <a href="#">напишите нам</a> Или позвоните нам по телефону: <span>+7 (701) 737 57 36</span></p>
+				<ul>
+					<li id="zakaz_button" class="passive">Как сделать заказ?</li>
+					<li id="buy_button" class="active">Как оплатить?</li>
+					<li id="logistic_button" class="active">Когда придет заказ?</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="garantiya">
+		<a name="garantiya"></a>
+		<div id="garantiya_wrap">
+			<h1>Мы гарантируем 100% возврат денег в случае</h1>
+			<div class="garantiya_item">
+				<div class="garant_image">
+					<img src="image/garantia_1.png" />
+				</div>
+				<p>Повреждения товара при транспортировке</p>
+			</div>
+			<div class="garantiya_item">
+				<div class="garant_image">
+					<img src="image/garantia_2.png" />
+				</div>
+				<p>Срыва срока более чем на 15 дней от заявленного</p>
+			</div>
+			<div class="garantiya_item">
+				<div class="garant_image">
+					<img src="image/garantia_3.png" />
+				</div>
+				<p>При несовпадения привезенного и заказанного товара по накладной</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div id="footer_wrap">
+			<div id="footer_left" class="columns">
+				<h1>Поможем и ответим &#8212; пишите!</h1>
+				<ul>
+					<li>
+						Ответим на любые ваши вопросы;
+					</li>
+					<li>
+						Бесплатно проконсультируем по каталогу IKEA;
+					</li>
+					<li>
+						Перезвоним и оформим заказ по телефону.
+					</li>
+				</ul>
+				<a href="image/Договор комиссии.pdf" target="blanck">Договор комиссии</a>
+				<h1>Или не ждите и звоните сами!<br /> <span>+7 (701) 737-57-36</span></h1>
+			</div>
+			<div id="footer_middle" class="columns">
+				<form>
+					<input id="comment" type="text" name="wishes" placeholder="Сообщение">
+					<input id='input_name' class='inp' type='text' name='name' placeholder='Имя'>
+					<input id='input_phone' class="inp" type="text" name="phone" placeholder="Телефон">
+					<input id='input_mail' class="inp" type="email" name="email" placeholder="Е-mail">
+					<div id="form_button" type="submit" class="active">
+						Отправить
+					</div>
+				</form>
+				<noindex>
+	                <div id="st-successfulSend" class="successfulSend">
+	                    <div class="sendTitle">Ваш запрос принят</div>
+	                    <div class="sendText">Мы свяжемся с вами в течение рабочего дня. Благодарим вас за выбор нашей компании</div>
+	                </div>
+            	</noindex>
+			</div>
+			<div id="footer_right" class="columns">
+				<h1>Контакты</h1>
+				<h2>Адрес:</h2>
+				<p>г. Актау, 10-2-135</p>
+				<h2>Телефон:</h2>
+				<p>+7 (701) 737-57-36</p>
+				<h2>E-mail:</h2>
+				<p>info@aktau-ikea.kz</p>
+				<h2>Время работы:</h2>
+				<p>Пн-Пт: 10:00-22:00</p>
+				<h2>Реквизиты:</h2>
+				<p class="rekviziti">ТОО "Актау Логистик"<br /> 
+				юр. адрес: г. Актау, <br />
+				10-2-135 <br /> 
+				ИНН: 011502224680<br />
+				КПП: 011502224680</p>
+			</div>
+		</div>
+		<div id="copyright">
+			<p class="paragraf">&copy; 2015</p>
+			<a class="paragraf" href="http://www.ikea.com/ru/ru/catalog/allproducts/">Каталог товаров ИКЕА</a>
+			<a class="paragraf" href="image/Договор комиссии.pdf" target="blanck">Договор</a>
+			<p class="paragraf">*в связи с колебанием курса рубля цены могут отличаться от указанных на сайте.</p>
+		</div>
+	</div>
+</div>
+
+<script>
+$(document).ready(function(){
+	$("input.label_better").label_better({
+	    position: "left",
+	    animationTime: 500,
+	    easing: "ease-in-out",
+	    offset: 20
+	});
+
+	$("#click_1").click(function(){
+		$("#menu_blue").removeClass().addClass("step_1");
+		$("#button_scroll").removeClass().addClass("button_step_1");
+		$("#list").animate({scrollTop:490},1000)
+	});
+	$("#click_2").click(function(){
+		$("#menu_blue").removeClass().addClass("step_2");
+		$("#button_scroll").removeClass().addClass("button_step_2");
+		$("#list").animate({scrollTop:875},1000)
+	});
+	$("#click_3").click(function(){
+		$("#menu_blue").removeClass().addClass("step_3");
+		$("#button_scroll").removeClass().addClass("button_step_3");
+		$("#list").animate({scrollTop:1160},1000)
+	});
+	$("#click_4").click(function(){
+		$("#menu_blue").removeClass().addClass("step_4");
+		$("#button_scroll").removeClass().addClass("button_step_4");
+		$("#list").animate({scrollTop:1410},1000);
+	});
+	$("#click_5").click(function(){
+		$("#menu_blue").removeClass().addClass("step_5");
+		$("#button_scroll").removeClass().addClass("button_step_5");
+		$("#list").animate({scrollTop:1620},1000);
+	});
+	$("#click_6").click(function(){
+		$("#menu_blue").removeClass().addClass("step_6");
+		$("#button_scroll").removeClass().addClass("button_step_6");
+		$("#list").animate({scrollTop:1895},1000);
+	});
+
+	setTimeout(function(){
+		$("#list").scroll(function(){
+		if($(this).scrollTop() > 490 && $(this).scrollTop() < 870){
+			$("#menu_blue").removeClass().addClass("step_1");
+			$("#button_scroll").removeClass().addClass("button_step_1");
+		}
+		else if($(this).scrollTop() > 871 && $(this).scrollTop() < 1155){
+			$("#menu_blue").removeClass().addClass("step_2");
+			$("#button_scroll").removeClass().addClass("button_step_2");
+		}
+		else if($(this).scrollTop() > 1156 && $(this).scrollTop() < 1405){
+			$("#menu_blue").removeClass().addClass("step_3");
+			$("#button_scroll").removeClass().addClass("button_step_3");
+		}
+		else if($(this).scrollTop() > 1406 && $(this).scrollTop() < 1615){
+			$("#menu_blue").removeClass().addClass("step_4");
+			$("#button_scroll").removeClass().addClass("button_step_4");
+		}
+		else if($(this).scrollTop() > 1616 && $(this).scrollTop() < 1795){
+			$("#menu_blue").removeClass().addClass("step_5");
+			$("#button_scroll").removeClass().addClass("button_step_5");
+		}
+		else if($(this).scrollTop() > 1796){
+			$("#menu_blue").removeClass().addClass("step_6");
+			$("#button_scroll").removeClass().addClass("button_step_6");
+		}
+	});},1500);
+
+	$(".mini_mebel").mouseover(function(){
+		$(this).append("<div style='width:100%;height:100%;' id='hover'><img style='width:34px;height:24px;top:40%;left:40%;' src='image/eye.png'></div>");
+	});
+	$(".mini_mebel").mouseleave(function(){
+		$("#hover").remove();
+		$("#hover").remove();
+	});
+
+	$("#mini_1").addClass('white');
+	$("#mini_1").css({"border":"solid 1px rgba(255,232,75,1)"});
+
+	$(".mini_mebel").click(function(){
+		$(".mini_mebel").removeClass('white');
+		$(".mini_mebel").css({"border":"solid 1px rgba(1,1,1,0.8)"});
+		$(this).addClass('white');
+		$(this).css({"border":"solid 1px rgba(255,232,75,1)"});
+	});
+
+	$("#mini_1").click(function(){
+		ph = $("#photo_1");
+		if(ph.css('display') == "none"){
+			$("#photo div").hide();
+			ph.fadeIn();
+		}
+		else return false;
+	});
+	$("#mini_2").click(function(){
+		ph = $("#photo_2");
+		if(ph.css('display') == "none"){
+			$("#photo div").hide();
+			ph.fadeIn();
+		}
+		else return false;
+	});
+	$("#mini_3").click(function(){
+		ph = $("#photo_3");
+		if(ph.css('display') == "none"){
+			$("#photo div").hide();
+			ph.fadeIn();
+		}
+		else return false;
+	});
+	$("#mini_4").click(function(){
+		ph = $("#photo_4");
+		if(ph.css('display') == "none"){
+			$("#photo div").hide();
+			ph.fadeIn();
+		}
+		else return false;
+	});
+	$("#mini_5").click(function(){
+		ph = $("#photo_5");
+		if(ph.css('display') == "none"){
+			$("#photo div").hide();
+			ph.fadeIn();
+		}
+		else return false;
+	});
+	$("#mini_6").click(function(){
+		ph = $("#photo_6");
+		if(ph.css('display') == "none"){
+			$("#photo div").hide();
+			ph.fadeIn();
+		}
+		else return false;
+	});
+	$("#mini_7").click(function(){
+		ph = $("#photo_7");
+		if(ph.css('display') == "none"){
+			$("#photo div").hide();
+			ph.fadeIn();
+		}
+		else return false;
+	});
+	$("#mini_8").click(function(){
+		ph = $("#photo_8");
+		if(ph.css('display') == "none"){
+			$("#photo div").hide();
+			ph.fadeIn();
+		}
+		else return false;
+	});
+
+	var li_history = $("#history_nav ul li"),
+		h1 = $("#history_nav h1"),
+		osnovatel = "<span>Основатель <span style='font-weight:bold;''>IKEA</span></span>"
+		histor = "<span>История <span style='font-weight:bold;''>IKEA</span></span>",
+		mebel = "<span>Мебель <span style='font-weight:bold;''>IKEA</span></span>";
+	li_history.click(function(){
+		li_history.removeClass().addClass('active');
+		$(this).removeClass().addClass('passive');
+		if($(this).attr('id') == "osnov_button") {
+			$("#history_three,#history_two").hide();
+			$("#history_one").fadeIn();
+			var x = $("#history_nav h1 span")[0];
+			x.parentNode.removeChild(x);
+			h1.append(osnovatel);
+		}
+		else if($(this).attr('id') == "hist_button") {
+			$("#history_one,#history_three").hide();
+			$("#history_two").fadeIn();
+			var x = $("#history_nav h1 span")[0];
+			x.parentNode.removeChild(x);
+			h1.append(histor);
+		}
+		else if($(this).attr('id') == "meb_button") {
+			$("#history_one,#history_two").hide();
+			$("#history_three").fadeIn();
+			var x = $("#history_nav h1 span")[0];
+			x.parentNode.removeChild(x);
+			h1.append(mebel);
+		}
+	});
+
+	var a = $("#nav ul li a");
+	var li = $("#stairs_footer_content ul li");
+	a.click(function(){
+		li.removeClass().addClass('active');
+		if($(this).attr('class') == "zakaz") {
+			$("#zakaz_button").removeClass().addClass('passive');
+			$("#buy,#logistic").hide();
+			$("#zakaz").fadeIn();
+			$("#stairs").css({
+				"background":"url(image/bg_zakaz.png) no-repeat center center",
+				"background-size":"cover"
+			});
+		}
+		else if($(this).attr('class') == "buy") {
+			$("#buy_button").removeClass().addClass('passive');
+			$("#zakaz,#logistic").hide();
+			$("#buy").fadeIn();
+			$("#stairs").css({
+				"background":"url(image/bg_cash.png) no-repeat center center",
+				"background-size":"cover"
+			});
+		}
+		else if($(this).attr('class') == "logistic") {
+			$("#logistic_button").removeClass().addClass('passive');
+			$("#buy,#zakaz").hide();
+			$("#logistic").fadeIn();
+			$("#stairs").css({
+				"background":"url(image/bg_dostavka.png) no-repeat center center",
+				"background-size":"cover"
+			});
+		}
+	});
+
+	li.click(function(){
+		li.removeClass().addClass('active');
+		$(this).removeClass().addClass('passive');
+		if($(this).attr('id') == "zakaz_button") {
+			$("#buy,#logistic").hide();
+			$("#zakaz").fadeIn();
+			$("#stairs").css({
+				"background":"url(image/bg_zakaz.png) no-repeat center center",
+				"background-size":"cover"
+			});
+		}
+		else if($(this).attr('id') == "buy_button") {
+			$("#zakaz,#logistic").hide();
+			$("#buy").fadeIn();
+			$("#stairs").css({
+				"background":"url(image/bg_cash.png) no-repeat center center",
+				"background-size":"cover"
+			});
+		}
+		else if($(this).attr('id') == "logistic_button") {
+			$("#buy,#zakaz").hide();
+			$("#logistic").fadeIn();
+			$("#stairs").css({
+				"background":"url(image/bg_dostavka.png) no-repeat center center",
+				"background-size":"cover"
+			});
+		}
+	});
+});
+</script>
+<!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter29640595 = new Ya.Metrika({ id:29640595, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/29640595" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--<script src="js/mail.js"></script>-->
+<script type="text/javascript" src="js/min/compiled.min.js"></script>
+<!--<script>
+	var button = document.getElementById('form_button');
+	button.onclick = app.validate;
+
+    document.getElementById('logo').onclick = function() {
+        console.log('Done');
+        var header, ul, li, phone;
+
+        header = document.getElementById('header');
+        ul = document.getElementById('nav').querySelector('ul');
+        li = ul.querySelectorAll('li');
+        phone = document.getElementById('phone');
+
+        header.classList.add('transition_header');
+        ul.classList.add('transition_ul');
+        phone.classList.add('transition_phone');
+
+        for(var i = 0; i < li.length; i++) {
+
+            li[i].classList.add('transition_li');
+
+        }
+    }
+</script>-->
+</body>
+
+</html>
