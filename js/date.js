@@ -1,32 +1,27 @@
 $(document).ready(function(){
 
-    var date,day,month,writeMonth, dayArrival, monthArrival, writeMonthArrival;
+    var date,day,month,writeMonth, dayArrival, monthArrival, writeMonthArrival, daysInMonth;
 
-    date=new Date();
-    day=date.getUTCDate();
+    /*Date.prototype.daysInMonth = function() {
+        return 33 - new Date(this.getFullYear(), this.getMonth(), 33).getDate();
+    };*/
+
+    date = new Date();
+    day = date.getUTCDate();
     month = (date.getUTCMonth()+1);
+
+    daysInMonth = 33 - new Date(date.getFullYear(), date.getMonth(), 33).getDate();
+
 
     if(day > 0 && day < 15){
 
         day = 15;
-        dayArrival = 30;
+        dayArrival = daysInMonth;
         monthArrival = month;
 
-    } else if (day >= 15 && day <= 30) {
+    } else if (day >= 15 && day <= daysInMonth) {
 
-        day = 30;
-        dayArrival = 15;
-        monthArrival = month + 1;
-
-    } else if (day >= 15 && day <= 28) {
-
-        day = 28;
-        dayArrival = 15;
-        monthArrival = month + 1;
-
-   } else if (day >= 15 && day <= 29) {
-
-        day = 29;
+        day = daysInMonth;
         dayArrival = 15;
         monthArrival = month + 1;
 
