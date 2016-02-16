@@ -24,6 +24,12 @@ $(document).ready(function(){
         dayArrival = 15;
         monthArrival = month + 1;
 
+   } else if (day >= 15 && day <= 29) {
+
+        day = 29;
+        dayArrival = 15;
+        monthArrival = month + 1;
+
     }
 
     switch (month) {
